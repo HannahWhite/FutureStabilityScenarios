@@ -1,0 +1,70 @@
+File F:\FutureClimate\EURO_CORDEX\RCA4\pr_EUR-11_MOHC-HadGEM2-ES_rcp85_r1i1p1_SMHI-RCA4_v1_day_20460101-20501230.nc (NC_FORMAT_NETCDF4_CLASSIC):
+
+     5 variables (excluding dimension variables):
+        double lat[rlon,rlat]   
+            standard_name: latitude
+            long_name: latitude
+            units: degrees_north
+        double lon[rlon,rlat]   
+            standard_name: longitude
+            long_name: longitude
+            units: degrees_east
+        float pr[rlon,rlat,time]   
+            grid_mapping: rotated_pole
+            _FillValue: 1.00000002004088e+20
+            missing_value: 1.00000002004088e+20
+            standard_name: precipitation_flux
+            long_name: Precipitation
+            units: kg m-2 s-1
+            coordinates: lon lat
+            cell_methods: time: mean
+        char rotated_pole[]   
+            grid_mapping_name: rotated_latitude_longitude
+            grid_north_pole_latitude: 39.25
+            grid_north_pole_longitude: -162
+        double time_bnds[bnds,time]   
+
+     4 dimensions:
+        rlat  Size:412
+            standard_name: grid_latitude
+            long_name: latitude in rotated pole grid
+            units: degrees
+            axis: Y
+        rlon  Size:424
+            standard_name: grid_longitude
+            long_name: longitude in rotated pole grid
+            units: degrees
+            axis: X
+        time  Size:1800   *** is unlimited ***
+            standard_name: time
+            units: days since 1949-12-01 00:00:00
+            calendar: 360_day
+            long_name: time
+            bounds: time_bnds
+            axis: T
+        bnds  Size:2
+[1] "vobjtovarid4: **** WARNING **** I was asked to get a varid for dimension named bnds BUT this dimension HAS NO DIMVAR! Code will probably fail at this point"
+
+    22 global attributes:
+        Conventions: CF-1.4
+        contact: rossby.cordex@smhi.se
+        creation_date: 2013-07-04-T02:35:57Z
+        experiment: RCP8.5
+        experiment_id: rcp85
+        driving_experiment: MOHC-HadGEM2-ES, rcp85, r1i1p1
+        driving_model_id: MOHC-HadGEM2-ES
+        driving_model_ensemble_member: r1i1p1
+        driving_experiment_name: rcp85
+        frequency: day
+        institution: Swedish Meteorological and Hydrological Institute, Rossby Centre
+        institute_id: SMHI
+        model_id: SMHI-RCA4
+        rcm_version_id: v1
+        project_id: CORDEX
+        CORDEX_domain: EUR-11
+        product: output
+        references: http://www.smhi.se/en/Research/Research-departments/climate-research-rossby-centre
+        tracking_id: 52c4ac6f-17e3-4d24-a93b-53b390e15191
+        rossby_comment: 201133: CORDEX Europe 0.11 deg | RCA4 v1 | MOHC-HadGEM2-ES | r1i1p1 | rcp85 | L40
+        rossby_run_id: 201133
+        rossby_grib_path: /nobackup/rossby15/rossby/joint_exp/cordex/201133/raw/
